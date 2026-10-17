@@ -10,10 +10,10 @@ router.param('id', (req, res, next, id) => {
   next();
 });
 
-router.get('/', c.getHotels);                                                                      // list + filters + pagination
-router.get('/:id', c.getHotel);                                                                    // single hotel (detail page)
-router.post('/', upload.single('image'), validateHotel({ requireImage: true }), c.createHotel);    // create
-router.put('/:id', upload.single('image'), validateHotel({ requireImage: false }), c.updateHotel); // update
-router.delete('/:id', c.deleteHotel);                                                              // delete
+router.get('/', c.getHotels);                                                                      
+router.get('/:id', c.getHotel);                                                                    
+router.post('/', upload.single('image'), validateHotel({ requireImage: true }), c.createHotel);   
+router.put('/:id', upload.single('image'), validateHotel({ requireImage: false }), c.updateHotel); 
+router.delete('/:id', c.deleteHotel);                                                            
 
 module.exports = router;
