@@ -28,7 +28,7 @@ CREATE TRIGGER trg_hotels_updated_at
     BEFORE UPDATE ON hotels
     FOR EACH ROW EXECUTE FUNCTION set_updated_at();
 
--- Database-level documentation 
+
 
 COMMENT ON TABLE  hotels             IS 'Hotels listed in the app (CRUD target table).';
 COMMENT ON COLUMN hotels.id          IS 'Primary key, auto-generated.';
