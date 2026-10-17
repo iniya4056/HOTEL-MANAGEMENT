@@ -1,0 +1,277 @@
+.staylux {
+  background: #f8f6ef;
+  color: #173b2d;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+.staylux-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 6%;
+  min-height: 58px;
+  background: #1d4ed8;
+  box-sizing: border-box;
+}
+
+.staylux-logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.staylux-nav button {
+  background: #ffffff;
+  color: #1d4ed8;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.staylux-hero {
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(10, 35, 26, .9), rgba(10, 35, 26, .2)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=80")
+    center/cover no-repeat;
+  color: white;
+}
+
+.staylux-overlay {
+  max-width: 650px;
+  padding: 65px 8%;
+}
+
+.staylux-tag {
+  color: #bfdbfe;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+
+.staylux-hero {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(10, 35, 70, 0.8), rgba(10, 35, 70, 0.2)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=75")
+    center/cover no-repeat;
+  color: white;
+}
+
+.staylux-overlay {
+  max-width: 520px;
+  padding: 35px 6%;
+}
+
+.staylux-hero h1 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.15;
+  margin: 16px 0;
+  color: white;
+}
+
+.staylux-hero p {
+  max-width: 400px;
+  line-height: 1.6;
+  color: #eeeeea;
+}
+
+
+.staylux-primary {
+margin-top: 20px;
+background: #2563eb;
+color: #ffffff;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+padding: 12px 24px;
+cursor: pointer;
+transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.staylux-primary span {
+  margin-left: 12px;
+}
+
+.hero-note {
+  position: absolute;
+  right: 6%;
+  bottom: 25px;
+  color: white;
+}
+
+.hero-note span {
+  color: #e6c77a;
+}
+
+.staylux-discover {
+  padding: 75px 6%;
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  margin: 16px 0;
+}
+
+.section-heading p {
+  color: #68766e;
+}
+
+.staylux-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.staylux-card {
+  background: white;
+  padding: 35px 24px;
+  border: 1px solid #e9e3d4;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .05);
+}
+
+.category-icon {
+  color:#2563eb;
+  font-size: 40px;
+}
+
+.staylux-card h3 {
+  margin-top: 18px;
+}
+
+.staylux-card p {
+  color: #68766e;
+  line-height: 1.7;
+}
+
+.staylux-secondary {
+  background: #17223b;
+  color: white;
+}
+
+.staylux-footer {
+  padding: 35px 15px;
+  background: #031677;
+  color: white;
+  text-align: center;
+}
+
+.staylux-footer strong {
+  color: #e6c77a;
+  letter-spacing: 2px;
+}
+
+.staylux-footer small {
+  color: #c6d0c9;
+}
+
+@media (max-width: 700px) {
+  .staylux-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .staylux-hero {
+    min-height: 500px;
+  }
+
+  .hero-note {
+    font-size: 12px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+}
+
+.home-hotels {
+  padding: 30px 0;
+  scroll-margin-top: 20px;
+}
+
+.home-hotels .page-head {
+  margin-top: 0;
+}
+
+.home-hotels .hotel-layout {
+  display: block;
+}
+
+.home-hotels .hotel-results {
+  width: 100%;
+  min-width: 0;
+}
+
+.staylux-hero {
+  min-height: 350px;
+}
+
+@media (max-width: 700px) {
+  .home-hotels {
+    padding: 18px 0;
+  }
+}
+
+.home-hotels .hotel-search-panel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.home-hotels .hotel-search-panel input[type="search"] {
+  flex: 2;
+  min-width: 180px;
+}
+
+.home-hotels .hotel-search-panel .top-price-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 2;
+}
+
+.home-hotels .top-price-filter input {
+  width: 110px;
+  min-width: 0;
+}
+
+.home-hotels .hotel-search-panel select {
+  min-width: 110px;
+}
+
+.home-hotels .hotel-search-panel .error {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .home-hotels .hotel-search-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-hotels .hotel-search-panel .top-price-filter {
+    flex-wrap: wrap;
+  }
+
+  .home-hotels .top-price-filter input {
+    flex: 1;
+    width: auto;
+  }
+}
